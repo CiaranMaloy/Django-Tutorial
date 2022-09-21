@@ -6,10 +6,11 @@
   </head>
   <body>
     <h1>Movies</h1>
-    <u1>
+    <ul>
       {% for movie in movies %}
-      <li>{{movie.title}}</li>
+      <li><a href="{{movie.id}}">{{movie.title}}</a></li>
       {% endfor%}
-    </u1>
+    </ul>
+    <a href="/movies/add">Add a movie</a>
   </body>
 </html>
